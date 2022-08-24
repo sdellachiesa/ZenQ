@@ -12,3 +12,4 @@ opts_chunk$set(echo=T)
 record_list<- list_records("https://zenodo.org/oai2d",metadataPrefix="oai_datacite",set="user-ioer_dresden")
 
 kable(record_list %>% select(identifier.3,title))
+df<-record_list %>% select(identifier.3,title)
