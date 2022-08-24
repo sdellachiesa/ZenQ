@@ -13,3 +13,4 @@ record_list<- list_records("https://zenodo.org/oai2d",metadataPrefix="oai_dataci
 
 kable(record_list %>% select(identifier.3,title))
 df<-record_list %>% select(identifier.3,title)
+
